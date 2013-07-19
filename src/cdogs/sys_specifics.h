@@ -70,7 +70,7 @@
 #define mkdir(p, a) mkdir(p)
 #endif
 
-#if !defined(ssize_t) && !defined(__MACTYPES__)
+#if !defined(__ssize_t_defined) && !defined(__MACTYPES__)
 typedef int ssize_t;
 #endif
 
